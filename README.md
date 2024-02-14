@@ -44,24 +44,11 @@ My hypothesis was that subscribers that have been with the service provider long
 This was confirmed by the findings. The Tenure field contained months, so I grouped these into 6 buckets - '6 months', '1 Year', '2 Years', '3 Years', '4 Years', '5 Years' and 'more than 5 Years'
 ![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/3a84a2ab-eb79-49b4-8816-9eb4a9b30ad4)
 
-
-
+### 5.	Reasons for Churn:
+ 
+### 6.	Churn Rate per Contract Type
  
 
-
-
-6.	Average Tenure of Churned Customers:
- 
-7.	Reasons for Churn:
- 
-8.	Churn Rate per Contract Type
- 
-
-9.	Highest Churn based on Payment type 
-10.	Churn Rates based on Monthly Charges
-
- 
-
-
-11.	
+### 7.	Highest Churn based on Payment type 
+### 8.	Churn Rates based on Monthly Charges	
 
