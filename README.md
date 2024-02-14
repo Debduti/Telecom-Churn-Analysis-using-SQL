@@ -16,31 +16,41 @@ The source dataset was in xls format, and was converted to a CSV format due to s
 
  The column Churn Label and Churn Value indicate if a customer has churned. A value of Yes /1 indicates a churned customer. The average churn rate turned out to be **26%**.
  The calculation for Churn Rate is done as follows : Number of Customers who Churned/Total number of Customers
+ ![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/c070c52d-a190-4a0e-9306-d523a1877faa)
  
 2.	Top 20 Cities with the highest churn rate:
  
- I was interested to see what the churn rate looked like for different cities, and which cities had the highest churn rates. The cities **Boulder Creek**, **Fort Jones**, **Maricopa** turned out to have the highest churn rates (100%). However, it is noteworthy that the customer base for these cities was very small too. When sorted on the absolute number of churned customers, **Los Angeles**, **San Diego**,**San Francisco**,**San Jose** were the cities with the highest churn count.
+ I was interested to see what the churn rate looked like for different cities, and which cities had the highest churn rates. The cities **Boulder Creek**, **Fort Jones**, **Maricopa** 
+ turned out to have the highest churn rates (100%). 
+ ![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/c2c99955-5b28-4f8c-b046-b5bbcf9bc05e)
+ 
+ However, it is noteworthy that the customer base for these cities was very small too. When sorted on the absolute number of churned customers, **Los Angeles**, **San Diego**,**San 
+ Francisco**,**San Jose** were the cities with the highest churn count.
  ![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/34a10acf-5e73-4f25-ab97-3efb8b6456e6)
 
 
-4.	Distribution of Churn Rates across gender
+3.	Distribution of Churn Rates across gender:
+Are there any differences in Churn Rate between Male and Female subscribers? Turns out, there isn't.
+![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/4ffefa12-d64a-4e35-8960-60e8aad73989)
+
+4.	
 
  
 
 
 
-5.	Average Tenure of Churned Customers:
+6.	Average Tenure of Churned Customers:
  
-6.	Reasons for Churn:
+7.	Reasons for Churn:
  
-7.	Churn Rate per Contract Type
- 
-
-8.	Highest Churn based on Payment type 
-9.	Churn Rates based on Monthly Charges
-
+8.	Churn Rate per Contract Type
  
 
+9.	Highest Churn based on Payment type 
+10.	Churn Rates based on Monthly Charges
 
-10.	
+ 
+
+
+11.	
 
