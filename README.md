@@ -8,7 +8,12 @@ The dataset used here was from Kaggle. The project was conducted using SQL. Poss
 MS SQl Server, SSMS, Excel
 
 ## Methodology
-The source dataset was in xls format, and was converted to a CSV format due to some issues in importing the data to SQL Server. The dataset was imported using the Import/Export feature of the tool. All data cleaning was conducted using SQL, followed by exploratory data analysis, also conducted using SQL.
+1. The source dataset was in xls format, and was converted to a CSV format due to some issues in importing the data to SQL Server. The dataset was imported using the Import/Export feature of the tool.
+2. I examined if there was inconsistency in the data types. None was found, so no changes were made. I checked for duplicate records,a nd none were found.
+3. I then examined all numeric fields to undertand if there were any NULLs. Only one numeric field -' Total_Charges' had NULLS for 11 records, which was replaced with average of the Total_Charges field.
+4. I examined the categorical fields for NULLs and , replaced with 0 wherever found.
+5. After data cleaning, I did exploratory data analysis, the findings of which are outlined in the following section.   
+6. All data cleaning was conducted using SQL, followed by exploratory data analysis, also conducted using SQL.
 
 ## Findings:
 
@@ -36,8 +41,7 @@ Are there any differences in Churn Rate between Male and Female subscribers? Tur
 
 ### 4. Average Tenure of Churned Customers:
 My hypothesis was that subscribers that have been with the service provider longer- tend to stay, and those that are relatively new , or are on short term contracts , tend to churn more.
-This was confirmed by the findings.
-
+This was confirmed by the findings. The Tenure field contained months, so I grouped these into 6 buckets - '6 months', '1 Year', '2 Years', '3 Years', '4 Years', '5 Years' and 'more than 5 Years'
 ![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/3a84a2ab-eb79-49b4-8816-9eb4a9b30ad4)
 
 
