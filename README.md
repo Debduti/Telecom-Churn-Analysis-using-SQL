@@ -12,13 +12,14 @@ The source dataset was in xls format, and was converted to a CSV format due to s
 
 ## Findings:
 
-1.	Average Churn Rate:
+### 1.	Average Churn Rate:
 
  The column Churn Label and Churn Value indicate if a customer has churned. A value of Yes /1 indicates a churned customer. The average churn rate turned out to be **26%**.
  The calculation for Churn Rate is done as follows : Number of Customers who Churned/Total number of Customers
+ 
  ![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/c070c52d-a190-4a0e-9306-d523a1877faa)
  
-2.	Top 20 Cities with the highest churn rate:
+### 2.	Top 20 Cities with the highest churn rate:
  
  I was interested to see what the churn rate looked like for different cities, and which cities had the highest churn rates. The cities **Boulder Creek**, **Fort Jones**, **Maricopa** 
  turned out to have the highest churn rates (100%). 
