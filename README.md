@@ -30,11 +30,17 @@ The source dataset was in xls format, and was converted to a CSV format due to s
  ![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/34a10acf-5e73-4f25-ab97-3efb8b6456e6)
 
 
-3.	Distribution of Churn Rates across gender:
+### 3.	Distribution of Churn Rates across gender:
 Are there any differences in Churn Rate between Male and Female subscribers? Turns out, there isn't.
 ![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/4ffefa12-d64a-4e35-8960-60e8aad73989)
 
-4.	
+### 4. Average Tenure of Churned Customers:
+My hypothesis was that subscribers that have been with the service provider longer- tend to stay, and those that are relatively new , or are on short term contracts , tend to churn more.
+This was confirmed by the findings.
+
+![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/3a84a2ab-eb79-49b4-8816-9eb4a9b30ad4)
+
+
 
  
 
