@@ -46,7 +46,7 @@ This was confirmed by the findings. The Tenure field contained months, so I grou
 
 ### 5.	Reasons for Churn:
 
-What are the various factors that contribute to Churn? This might be the most important question to answer, as it gives a direct pathway to what should be controlled in order to reduce Churn. There were a number of different reasons attributed to Churn, which I grouped into 8 buckets for easier understanding of the broad reasons. **8%** of churn happens because a competition has better services, offers and products, followed by poor customer service that contributes to **5%** churn. 
+What are the various factors that contribute to Churn? This might be the most important question to answer, as it gives a direct pathway to what should be controlled in order to reduce Churn. There were a number of different reasons attributed to Churn, which I grouped into 8 buckets for easier understanding of the broad reasons. **33%** of churn happens because a competition has better services, offers and products, followed by poor customer service that contributes to **19%** churn. 
 ![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/1e63096b-b4cb-460a-9a78-9566c3925882)
  
 ### 6.	Churn Rate per Contract Type
@@ -59,7 +59,7 @@ Subscribers on a long term contract tend to stay longer, with the least amount o
 
 Payment method seems to be a big influennce in whether a customer would stay or leave. Those customers that pay with Electronic check tend to churn the most, at **45%**.
 
-![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/fe6b6a51-c549-4cc3-a76f-ed1d17ed053f)
+![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/3b469e10-81d7-4cd1-bc44-e02adc92ad46)
 
 
 ### 8.	Churn Rates based on Monthly Charges	
