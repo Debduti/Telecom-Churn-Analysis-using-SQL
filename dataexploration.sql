@@ -255,7 +255,8 @@ SELECT TOP (10) [CustomerID]
 
   --2.2 Churn Rate by city, and top cities with highest churn rate
 
-    SELECT City,
+    
+	SELECT City,
 	SUM(COUNT(CustomerID)) OVER() AS Grand_Total_Customers,
 	SUM(COUNT(CustomerID)) OVER(PARTITION BY City) AS Customers_City,
     SUM(CASE WHEN Churn_Label ='YES' THEN 1 ELSE 0 END) AS Churn_Count,
@@ -263,6 +264,17 @@ SELECT TOP (10) [CustomerID]
     FROM [Telco Customer Churn].[dbo].[Telco_customer_churn] 
 	GROUP BY City
 	ORDER BY Churn_RateCity DESC
+	OFFSET  0 ROWS 
+    FETCH NEXT 20 ROWS ONLY 
+	
+	SELECT City,
+	SUM(COUNT(CustomerID)) OVER() AS Grand_Total_Customers,
+	SUM(COUNT(CustomerID)) OVER(PARTITION BY City) AS Customers_City,
+    SUM(CASE WHEN Churn_Label ='YES' THEN 1 ELSE 0 END) AS Churn_Count,
+    100*SUM(CASE WHEN Churn_Label ='YES' THEN 1 ELSE 0 END) / SUM(COUNT(CustomerID)) OVER(PARTITION BY City) AS Churn_RateCity
+    FROM [Telco Customer Churn].[dbo].[Telco_customer_churn] 
+	GROUP BY City
+	ORDER BY Churn_Count DESC
 	OFFSET  0 ROWS 
     FETCH NEXT 20 ROWS ONLY 
 
@@ -361,18 +373,20 @@ SELECT TOP (10) [CustomerID]
 
 
 	SELECT Churn_Reason_Category,
-	SUM(COUNT(CustomerID)) OVER() AS Grand_Total_Customers,
-	SUM(CASE WHEN Churn_Label ='YES' THEN 1 ELSE 0 END) AS Churn_Count,
-    CAST(100*SUM(CASE WHEN Churn_Label ='YES' THEN 1 ELSE 0 END) / SUM(COUNT(CustomerID)) OVER() AS DECIMAL(10,2)) AS Churn_Rate_Per_ChurnReason
-    FROM [Telco Customer Churn].[dbo].[Telco_customer_churn] 
+	SUM(COUNT(CustomerID)) OVER() AS Total_Churn,	
+	SUM(CASE WHEN Churn_Label ='YES' THEN 1 ELSE 0 END) AS Churn_Count_Per_ChurnReason,
+	100*SUM(CASE WHEN Churn_Label ='YES' THEN 1 ELSE 0 END) / SUM(COUNT(CustomerID)) OVER() AS Churn_Rate_Per_ChurnReason
+    FROM [Telco Customer Churn].[dbo].[Telco_customer_churn]
+	WHERE Churn_Label = 'Yes'
 	GROUP BY Churn_Reason_Category
-	ORDER BY Churn_Count DESC
+	ORDER BY Churn_Rate_Per_ChurnReason DESC
+	
 
   -- 2.9 Preferred Payment Methods
 
   SELECT Payment_Method,
 	SUM(COUNT(CustomerID)) OVER() AS Grand_Total_Customers,
-	SUM(COUNT(CustomerID)) OVER(PARTITION BY Payment_Method) AS Customers_per_ChurnReason,
+	SUM(COUNT(CustomerID)) OVER(PARTITION BY Payment_Method) AS Customers_per_PaymentMethod,
     SUM(CASE WHEN Churn_Label ='YES' THEN 1 ELSE 0 END) AS Churn_Count,
     100*SUM(CASE WHEN Churn_Label ='YES' THEN 1 ELSE 0 END) / SUM(COUNT(CustomerID)) OVER(PARTITION BY Payment_Method) AS Churn_Rate_Per_PaymentMethod
     FROM [Telco Customer Churn].[dbo].[Telco_customer_churn] 
