@@ -27,7 +27,7 @@ MS SQl Server, SSMS, Excel
 ### 2.	Top 20 Cities with the highest churn rate:
  
  I was interested to see what the churn rate looked like for different cities, and which cities had the highest churn rates. The cities **Boulder Creek**, **Fort Jones**, **Maricopa** 
- turned out to have the highest churn rates (100%). 
+ turned out to be some of the cities with the highest churn rates (**100%**). 
  ![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/c2c99955-5b28-4f8c-b046-b5bbcf9bc05e)
  
  However, it is noteworthy that the customer base for these cities was very small too. When sorted on the absolute number of churned customers, **Los Angeles**, **San Diego**,**San 
@@ -36,12 +36,12 @@ MS SQl Server, SSMS, Excel
 
 
 ### 3.	Distribution of Churn Rates across gender:
-Are there any differences in Churn Rate between Male and Female subscribers? Turns out, there isn't.
+Are there any differences in Churn Rate between Male and Female subscribers? Turns out, there isn't. Churn rate for both genders is at **26%**.
 ![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/4ffefa12-d64a-4e35-8960-60e8aad73989)
 
 ### 4. Average Tenure of Churned Customers:
 My hypothesis was that subscribers that have been with the service provider longer- tend to stay, and those that are relatively new , or are on short term contracts , tend to churn more.
-This was confirmed by the findings. The Tenure field contained months, so I grouped these into 6 buckets - '6 months', '1 Year', '2 Years', '3 Years', '4 Years', '5 Years' and 'more than 5 Years'
+This was confirmed by the findings. The Tenure field contained months, so I grouped these into 6 buckets - '6 months', '1 Year', '2 Years', '3 Years', '4 Years', '5 Years' and 'more than 5 Years'. At a whopping **52%**, Churn rate was highest amongst the group that have been customers for less than or equal to 6 months.
 ![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/3a84a2ab-eb79-49b4-8816-9eb4a9b30ad4)
 
 ### 5.	Reasons for Churn:
