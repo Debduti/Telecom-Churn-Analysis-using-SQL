@@ -58,6 +58,7 @@ Subscribers on a long term contract tend to stay longer, with the least amount o
 ### 7.	Highest Churn based on Payment type 
 
 Payment method seems to be a big influennce in whether a customer would stay or leave. Those customers that pay with Electronic check tend to churn the most, at **45%**.
+
 ![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/fe6b6a51-c549-4cc3-a76f-ed1d17ed053f)
 
 
