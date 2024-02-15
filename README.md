@@ -67,4 +67,19 @@ Payment method seems to be a big influennce in whether a customer would stay or 
 Monthly charges, unsurprisingly , contribute a lot towards churn . We grouped the monthly charges into 5 buckets ranging from Very Low (under $20) to Very High (above $100), and churn rate is highest at **33%**.
 ![image](https://github.com/Debduti/Telecom-Churn-Analysis-using-SQL/assets/58540839/ac63e1a7-abfb-4aa9-8d39-800d2292fb8c)
 
+# Recommendations:
+
+Not all findings will have actionable insights, or any recommendation to improve the process. However, from our analysis, we have a few recommendations that can be implemented to reduce churn count and improve subscriber loyalty
+
+1. Offer better , innovative value added services to long term contracts. This will help convert more customers from month-to-month plans to long term contracts, and reduce churn
+2. Offer training to customer service personnel. Our findings show that poor customer service is one of the top reasons for churn. Some investment in training will go a long way for customer retention
+3. Offer discounts or promotional offers on electronic payment methods like bank transfer or credit cards to encourage customers to convert from E-checks
+4. Improve the range of services to cover locations that have poor connectivity. This will help bring in customers and retain existing customers that travel to such locations
+5. Competitive pricing on products and plans should be offered by conducting thorough research on pricing by the competiton
+
+# Next Steps:
+
+As a next step to the project, we can :
+1. Build interactive dashboards to visualize our findings
+2. Build predictive models to predict churn rates to help take preemptive measures to reduce churn
 
